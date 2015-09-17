@@ -6,7 +6,7 @@ var APP  = React.createClass({
 		render: function() {
 			return (
 					<div>
-						<h1>Lets Shop</h1>
+						<h1>Let's Shop</h1>
 						<Catalog />
 						<h1>Cart</h1>
 						<Cart />
