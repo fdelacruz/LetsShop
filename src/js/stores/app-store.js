@@ -1,4 +1,4 @@
-var AppDispatcher = require('../dispatchers/app-dispatcher');
+var AppDispatcher = require('../dispatcher/app-dispatcher');
 var AppConstants = require('../constants/app-constants');
 var assign = require('react/lib/Object.assign');
 var EventEmitter = require('events').EventEmitter;
@@ -85,7 +85,7 @@ var AppStore = assign(EventEmitter.prototype, {
 		AppStore.emitChange();
 
 		return true;
-	});
+	})
 });
 
 module.exports = AppStore;
