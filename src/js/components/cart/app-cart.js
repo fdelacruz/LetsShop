@@ -1,8 +1,8 @@
 var React = require('react');
-var AppStore = require('../../stores/app-store.js');
-var RemoveFromCart = require('./app-removefromcart.js');
-var Increase = require('./app-increase.js');
-var Decrease= require('./app-decrease.js');
+var AppStore = require('../../stores/app-store');
+var RemoveFromCart = require('./app-removefromcart');
+var Increase = require('./app-increase');
+var Decrease= require('./app-decrease');
 
 function cartItems() {
 	return {items: AppStore.getCart()}

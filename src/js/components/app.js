@@ -1,6 +1,6 @@
 var React = require('react');
-var Catalog = require('./catalog/app-catalog.js');
-var Cart = require('./cart/app-cart.js');
+var Catalog = require('./catalog/app-catalog');
+var Cart = require('./cart/app-cart');
 
 var APP  = React.createClass({
 		render: function() {

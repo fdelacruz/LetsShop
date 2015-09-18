@@ -1,5 +1,5 @@
-var AppConstants = require('../constants/app-constants.js');
-var AppDispatcher = require('../dispatcher/app-dispatcher.js');
+var AppConstants = require('../constants/app-constants');
+var AppDispatcher = require('../dispatcher/app-dispatcher');
 
 var AppActions = {
 	addItem: function (item) {
