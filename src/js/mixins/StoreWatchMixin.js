@@ -7,9 +7,11 @@ var StoreWatchMixin = function (cb) {
 			return cb(this);
 		},
 		componentWillMount: function () {
+			console.log("Mounted..");
 			AppStore.addChangeListener(this._onChange);
 		},
 		componentWillUnMount: function () {
+			console.log("Umounted..");
 			AppStore.removeChangeListener(this._onChange);
 		},
 		_onChange: function () {
