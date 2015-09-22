@@ -28,7 +28,7 @@ var CatalogDetail = React.createClass({
             <Link href='/' className="btn btn-default">Continue Shopping</Link>
           </div>
         </div>
-			)
+			);
 		}
 });
 

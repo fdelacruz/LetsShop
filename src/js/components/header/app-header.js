@@ -11,7 +11,7 @@ var Header = React.createClass({
 								<CartSummary />
 						</div>
 					</div>
-			)
+			);
 		}
 });
 

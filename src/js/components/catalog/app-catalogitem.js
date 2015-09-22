@@ -2,7 +2,7 @@ var React = require('react'),
     AddToCart = require('./app-addtocart'),
     Link = require('react-router-component').Link;
 
-var CatalogItem  = React.createClass({
+var CatalogItem = React.createClass({
 		render: function() {
       var itemStyle = {
         bordeBottom: '1px solid #ccc',
@@ -19,7 +19,7 @@ var CatalogItem  = React.createClass({
             <AddToCart item={this.props.item} />
           </div>
         </div>
-			)
+			);
 		}
 });
 

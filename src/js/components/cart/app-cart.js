@@ -1,17 +1,16 @@
 var React = require('react');
 var AppStore = require('../../stores/app-store');
 var RemoveFromCart = require('./app-removefromcart');
-var Increase = require('./app-increase');
-var Decrease = require('./app-decrease');
+var Increase = require('./app-increaseitem');
+var Decrease = require('./app-decreaseitem');
 var StoreWatchMixin = require('../../mixins/StoreWatchMixin');
 Link = require('react-router-component').Link;
 
 function cartItems() {
-	return {items: AppStore.getCart()}
+	return {items: AppStore.getCart()};
 }
 
-var Cart = 
-React.createClass({
+var Cart = React.createClass({
 	mixins: [StoreWatchMixin(cartItems)],
 	render: function () {
 		var total = 0;
@@ -60,4 +59,3 @@ React.createClass({
 });
 
 module.exports = Cart;
-

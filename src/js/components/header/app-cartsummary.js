@@ -18,7 +18,7 @@ var CartSummary = React.createClass({
 							Cart Items: {this.state.qty} / ${this.state.total}
 						</Link>
 					</div>
-			)
+			);
 		}
 });
 

@@ -1,14 +1,13 @@
 var React = require('react');
 var AppActions = require('../../actions/app-actions');
-var Increase =
-	React.createClass({
-		handleClick: function () {
+
+var IncreaseItem = React.createClass({
+		handler: function () {
 			AppActions.increaseItem(this.props.index);
 		},
 		render: function() {
-			return <button onClick={this.handleClick}>+</button>
+			return <button onClick={this.handler}>+</button>
 		}
 });
 
-module.exports = Increase;
-
+module.exports = IncreaseItem;

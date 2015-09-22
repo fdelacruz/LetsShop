@@ -18,7 +18,7 @@ var Catalog = React.createClass({
 					<div className="row">
 						{items}
 					</div>
-			)
+			);
 		}
 	});
 
