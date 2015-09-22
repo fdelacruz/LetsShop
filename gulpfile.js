@@ -1,7 +1,8 @@
 var gulp = require('gulp');
-var browserify = require('gulp-browserify');
-var concat = require('gulp-concat');
-var plumber = require('gulp-plumber');
+var browserify = require('browserify');
+var reactify = require('reactify');
+var source = require('vinyl-source-stream');
+
 var connect = require('gulp-connect');
 var open = require('gulp-open');
 
@@ -28,10 +29,11 @@ gulp.task('open', ['connect'], function () {
 });
 
 gulp.task('browserify', function () {
-	gulp.src('src/js/main.js')
-			.pipe(plumber())
-			.pipe(browserify({transform: 'reactify'}))
-			.pipe(concat('main.js'))
+	browserify('./src/js/main.js')
+			.transform('reactify')
+			.bundle()
+			.on('error', console.error.bind(console))
+			.pipe(source('main.js'))
 			.pipe(gulp.dest('dist/js'))
 			.pipe(connect.reload());
 });
